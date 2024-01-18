@@ -4,28 +4,28 @@
   </button>
   <div class="container-fluid" id="navbarNav">
     <div class="navbar-header">
-      <a  href="{% url 'home' %}"class="navbar-brand btn btn-lg btn-secondary" href=""><span class="glyphicon  
-        glyphicon-home">Blogsite</a>
+      <a  href="{% url 'home' %}"class="navbar-brand btn btn-lg btn-primary" href=""><span class="glyphicon  
+        glyphicon-home">Blog App</a>
     </div>
       
         {% if user.is_authenticated %}
         
         <ul class="nav navbar-nav">
-          <li><a href="{% url 'dashboard' %}" class="btn btn-sm btn-primary"><span class="glyphicon  
-            glyphicon-search"> Your Blog Site</a></li>
+          <li><a href="{% url 'dashboard' %}" class="btn btn-sm btn-secondary"><span class="glyphicon  
+            glyphicon-search"> My Blog</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{% url 'dashboardall' %}"class="btn btn-sm btn-primary"><span class="glyphicon  
-            glyphicon-forward"></span> Browse All Blogs</a></li>
+          <li><a href="{% url 'dashboardall' %}"class="btn btn-sm btn-secondary"><span class="glyphicon  
+            glyphicon-forward"></span> Blog List</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{% url 'user-logout' %}"class="btn btn-sm btn-danger"><span class="glyphicon  
+          <li><a href="{% url 'user-logout' %}"class="btn btn-sm btn-primary"><span class="glyphicon  
             glyphicon-log-out"></span> Logout</a></li>
         </ul>
 
           {% else %}
         <ul class="nav navbar-nav">
-          <li><a href="{% url 'register' %}" class="btn btn-lg btn-primary"><span class="glyphicon  
+          <li><a href="{% url 'register' %}" class="btn btn-lg btn-secodary"><span class="glyphicon  
             glyphicon-user"></span> Sign Up</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
